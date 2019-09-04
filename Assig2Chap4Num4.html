@@ -1,8 +1,8 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 <head>
-    <meta charset="utf-8">
-    <title>Creat and validate HTML5</title>
+<meta charset="utf-8">
+<title> Your Information </title>
         <script>
                 function allAbout(){
                     let firstName = document.getElementById("firstnameInputBox").value; 
@@ -10,27 +10,24 @@
                     let age = document.getElementById("ageInputBox").value;
                     let gender = document.getElementById("genderInputBox").value;
                     let study = document.getElementById("studyInputBox").value;
-                    let fullName = firstName +" " + lastName ;
-                     document.getElementById("outputDiv").innerHTML = fullName;
-                     document.getElementById("outputDiv1").innerHTML = age;
-                     document.getElementById("outputDiv2").innerHTML = gender;
-                     document.getElementById("outputDiv3").innerHTML = study;
+                    let fullInformation = firstName +" " + lastName + " " + age + " " + gender + " " + study ;
+                     document.getElementById("outputDiv").innerHTML = fullInformation;
+                     
                 }
         </script>
-</head>
-<body>
-     <h1>Main Informations Required</h1>
+ </head>
+ <body>
+     <h1>This was all about me</h1>
      First Name <input type="text" id="firstnameInputBox"> <br>
      Last Name <input type="text" id="lastnameInputBox"> <br>
      Age<input type="text" id="ageInputBox"><br>
      Gender<input type="text" id="genderInputBox"><br>
      Field of Study <input type="text" id="studyInputBox"><br>
-     <button type="button" onclick="allAbout()">Fill and Click</button>
+     <button type="button" onclick="allAbout()">About You</button>
      <div id = "outputDiv"></div>
-     <div id = "outputDiv1"></div>
-     <div id = "outputDiv2"></div>
-     <div id = "outputDiv3"></div>
      
-<p>Click the "Fill and Click" button and the form-data will be sent to a page on the server</p>
+     <textarea name="text" cols="40" rows="10"></textarea>
+     
+<p>Click the "Submit" button and the form-data will be sent to a page on the server.</p>
 </body>
 </html>

@@ -13,15 +13,16 @@ function applyScripture() {
 // Get the user's name from the text field that has the // of "nameInputBox" and store it in a variable named var name = document.getElementById('nameInputBox'
 // Use string concatenation to create a verse
 // of scripture personalized for the user.
-var scripture = "I, " + name + ", having been born of"
-" goodly parents, therefore I was taught somewhat"
-" in all the learning of my father.";
-// Display the scripture in the div that has the id "document.getElementById('outputDiv').innerHTML = scripture;
+let name = document.getElementById("firstnameInputBox").value;
+let scripture = "I, " + name + ", was one of MSD students." +
+" I came from seattle, which is located in Washngton state" +
+" right now I am learning fundamentals in JS.";
+document.getElementById('outputDiv').innerHTML = scripture;
 }
 </script>
 </head>
 <body>
-Please enter your name: <input type="text" id="nameInputBox">
+    User Name <input type="text" id="firstnameInputBox"> <br>
 <button type="button" onclick="applyScripture()">Click to Apply</button>
 <div id="outputDiv"></div>
 </body>
